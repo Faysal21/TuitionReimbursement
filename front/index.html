@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRMS - Create New Request</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>TRMS Request Form</h1>
+  <script src="script.js"></script>
+
+  <p>Click <a href="login.html">here</a> if you need to access an existing request.</p>
+  <p>Preview the <a href=supervisor-decision.html>supervisor approval</a>, <a href=dept-head-decision.html>department head</a>, <a href=benco-decision.html>Benefits Coordinator</a>, and <a href="upload-finished-work.html">final grade/presentation upload</a> page</p>
+
+  <div class="employee-box">
+    <form name="newEmployeeForm">
+      <label><strong>Personal info:</strong></label><br>
+      <input type="text" id="fname" placeholder="First name" name="fname">
+      <input type="text" id="lname" placeholder="Last name" name="lname"><br>
+      <input type="email" class="field" id="email" placeholder="E-mail address" name="email"><br>
+      <input type="tel" class="field" id ="phone" placeholder="Phone number" name="phone"><br>
+      <input type="text" class="field" id="employeeaddress" placeholder="Mailing address" name="employeeaddress"><br>
+      <input type="text" id="employeecity" placeholder="City" name="employeecity">
+      <select id="employeestate" class="dropdown-selector" name="employeestate">
+        <option disabled selected value>State</option>
+        <option value="AL">Alabama</option>
+	      <option value="AK">Alaska</option>
+	      <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+	      <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+	      <option value="DC">District Of Columbia</option>
+	      <option value="FL">Florida</option>
+	      <option value="GA">Georgia</option>
+	      <option value="HI">Hawaii</option>
+	      <option value="ID">Idaho</option>
+	      <option value="IL">Illinois</option>
+	      <option value="IN">Indiana</option>
+	      <option value="IA">Iowa</option>
+	      <option value="KS">Kansas</option>
+	      <option value="KY">Kentucky</option>
+	      <option value="LA">Louisiana</option>
+	      <option value="ME">Maine</option>
+	      <option value="MD">Maryland</option>
+	      <option value="MA">Massachusetts</option>
+	      <option value="MI">Michigan</option>
+	      <option value="MN">Minnesota</option>
+	      <option value="MS">Mississippi</option>
+	      <option value="MO">Missouri</option>
+	      <option value="MT">Montana</option>
+	      <option value="NE">Nebraska</option>
+	      <option value="NV">Nevada</option>
+	      <option value="NH">New Hampshire</option>
+	      <option value="NJ">New Jersey</option>
+	      <option value="NM">New Mexico</option>
+	      <option value="NY">New York</option>
+	      <option value="NC">North Carolina</option>
+	      <option value="ND">North Dakota</option>
+	      <option value="OH">Ohio</option>
+	      <option value="OK">Oklahoma</option>
+	      <option value="OR">Oregon</option>
+	      <option value="PA">Pennsylvania</option>
+	      <option value="RI">Rhode Island</option>
+	      <option value="SC">South Carolina</option>
+	      <option value="SD">South Dakota</option>
+	      <option value="TN">Tennessee</option>
+	      <option value="TX">Texas</option>
+	      <option value="UT">Utah</option>
+	      <option value="VT">Vermont</option>
+	      <option value="VA">Virginia</option>
+	      <option value="WA">Washington</option>
+	      <option value="WV">West Virginia</option>
+	      <option value="WI">Wisconsin</option>
+	      <option value="WY">Wyoming</option>
+      </select>
+      <input type="number" id="employeezip" placeholder="Zip code" maxlength=5 name="employeezip"><br>
+
+    </form>
+  </div>
+
+  <div class="event-box">
+    <form name="newEventForm">
+      <label><strong>Event details:</strong></label><br>
+      <select id="eventtype" class="field" name="eventtype">
+        <option disabled selected value>Event type</option>
+        <option value="University course">University course</option>
+	      <option value="Seminar">Seminar</option>
+	      <option value="Certification prep class">Certification prep class</option>
+        <option value="Certification">Certification</option>
+        <option value="Technical training">Technical training</option>
+        <option value="Other">Other</option>
+      </select><br>
+      <input type="date" class="field" id="eventdate" placeholder="Start date" name="eventdate"><br>
+      <input type="text" class="field" id="eventaddress" placeholder="Event address" name="eventaddress"><br>
+      <input type="text" id="eventcity" placeholder="City" name="eventcity">
+      <select id="eventstate" class="dropdown-selector" name="eventstate">
+        <option disabled selected value>State</option>
+        <option value="AL">Alabama</option>
+	      <option value="AK">Alaska</option>
+	      <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+	      <option value="CT">Connecticut</option>
+	      <option value="DE">Delaware</option>
+	      <option value="DC">District Of Columbia</option>
+	      <option value="FL">Florida</option>
+	      <option value="GA">Georgia</option>
+	      <option value="HI">Hawaii</option>
+	      <option value="ID">Idaho</option>
+	      <option value="IL">Illinois</option>
+	      <option value="IN">Indiana</option>
+	      <option value="IA">Iowa</option>
+	      <option value="KS">Kansas</option>
+	      <option value="KY">Kentucky</option>
+	      <option value="LA">Louisiana</option>
+	      <option value="ME">Maine</option>
+	      <option value="MD">Maryland</option>
+	      <option value="MA">Massachusetts</option>
+	      <option value="MI">Michigan</option>
+	      <option value="MN">Minnesota</option>
+	      <option value="MS">Mississippi</option>
+	      <option value="MO">Missouri</option>
+	      <option value="MT">Montana</option>
+	      <option value="NE">Nebraska</option>
+	      <option value="NV">Nevada</option>
+	      <option value="NH">New Hampshire</option>
+	      <option value="NJ">New Jersey</option>
+	      <option value="NM">New Mexico</option>
+	      <option value="NY">New York</option>
+	      <option value="NC">North Carolina</option>
+	      <option value="ND">North Dakota</option>
+	      <option value="OH">Ohio</option>
+	      <option value="OK">Oklahoma</option>
+	      <option value="OR">Oregon</option>
+	      <option value="PA">Pennsylvania</option>
+	      <option value="RI">Rhode Island</option>
+	      <option value="SC">South Carolina</option>
+	      <option value="SD">South Dakota</option>
+	      <option value="TN">Tennessee</option>
+	      <option value="TX">Texas</option>
+	      <option value="UT">Utah</option>
+	      <option value="VT">Vermont</option>
+	      <option value="VA">Virginia</option>
+	      <option value="WA">Washington</option>
+	      <option value="WV">West Virginia</option>
+	      <option value="WI">Wisconsin</option>
+	      <option value="WY">Wyoming</option>
+      </select>
+      <input type="number" id="eventzip" placeholder="Zip code" maxlength=5 name="eventzip"><br>
+      <input class="field" id="description" placeholder="Description"><br>
+      <input class="field" id="cost" placeholder="Cost"><br>
+      <input type="checkbox" id="defaultgrading" name="defaultgrading" value="Yes">
+      <label for="defaultgrading"> Use default grading scheme</label><br>
+    </form>
+
+
+  </div>
+
+  <h2>Optional details</h2>
+  <label>Attachments related to event:</label>
+  <input type="file"><br>
+  <input type="email" placeholder="Supervisor e-mail address"><br>
+
+  <button onclick="create_request()">SUBMIT</button>
+</body>
+
+</html>

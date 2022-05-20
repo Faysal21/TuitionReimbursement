@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-image: url(Meteor.svg);
+  background-repeat: no-repeat;
+  color: white;
+}
+.employee-box, .event-box{
+  border: 1px solid black;
+  padding: 2px;
+  color: black;
+}
+.employee-box, .login-box {
+  background-color: #fed766;
+}
+.event-box {
+  background-color: #ffae17;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #fed766;
+}
+input, .dropdown-selector, .field {
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Lato', sans-serif;
+  color: gray;
+  padding: 6px;
+}
+.number-field {
+  width: 2.75em;
+}
+.login-email-field {
+  width: 26.25em;
+}
+.denial-reason-field {
+  background-color: white;
+  width: 400px;
+  height:100px;
+  border-bottom: none;
+}
+.denial-reason-field:focus {
+  outline: 1px solid red;
+  color: black;
+  border-bottom: none;
+}
+.finished-work-uploader {
+  background-color: yellow;
+  border-bottom: 2px solid white;
+}
+input[type='text'], input[type='number'] {
+  padding-bottom: 7px;
+}
+input:focus {
+  outline: none;
+  border: none;
+  color: black;
+  border-bottom: 3px solid red;
+}
+.field {
+  width: 60%;
+}
+.submit-button {
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: #42f56c;
+}

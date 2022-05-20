@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRMS - BenCo Approval Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>TRMS Request Form</h1>
+  <script src="script.js"></script>
+
+  <p>Hi, Benco! Welcome to the approval page!</p>
+
+  <form>
+    <input type="radio" id="bencoapproves" name="did_benco_approve" value="APPROVED">
+    <label for="bencoapproves">I, the Benefits coordinator responsible for all pending reimbursements, approve of the employee's work in this event and as such, the employee will receive a reimbursement.</label><br>
+    <input type="radio" id="benconeedsmore" name="did_benco_approve" value="DENIED">
+    <label for="benconeedsmore">I, the Benefits coordinator responsible for all pending reimbursements, do NOT approve of the employee's work and would like to request more information in order to reconsider proper approval for reimbursement.</label><br>
+    <label>If you denied the reinbursement, please explain why: </label><br>
+    <input type="text" id="bencodenialreason" name="bencodenialreason" class="denial-reason-field">
+  </form>
+
+  <button>SUBMIT DECISION</button>
+
+</body>

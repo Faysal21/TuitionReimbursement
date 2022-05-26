@@ -2,7 +2,7 @@
 ## Project Description
 A full-stack web application designed for a simulated tuition reimbursement management system.
 
-## Technologies used
+## Technologies Used
 * Psycopg2 - version 2.9.3
 * Flask - version 2.1.2
 * Flask-Cors - version 3.0.10
